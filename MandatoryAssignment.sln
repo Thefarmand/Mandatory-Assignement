@@ -3,17 +3,19 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28010.2041
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MandatoryAssignment", "MandatoryAssignment\MandatoryAssignment.csproj", "{CC3B0F81-194C-479C-8674-8FDAE751727F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MandatoryAssignment", "MandatoryAssignment\MandatoryAssignment.csproj", "{CC3B0F81-194C-479C-8674-8FDAE751727F}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Opgave1", "Opgave1", "{E79F45A9-C179-4BB2-8895-CBB7A79BF072}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Opgave2", "Opgave2", "{88AA2EC1-5B02-4BBD-8919-D3FA632C22C7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TCPServer", "TCPServer\TCPServer.csproj", "{B58C91A5-D5D6-45AA-89D1-5715BC19F9F2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TCPServer", "TCPServer\TCPServer.csproj", "{B58C91A5-D5D6-45AA-89D1-5715BC19F9F2}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Opgave3", "Opgave3", "{C0771B06-F47C-4C11-A383-BB73156BB44D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TCPClient", "TCPClient\TCPClient.csproj", "{7FDF9A1A-D710-4921-95EF-741C1D3E705D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TCPClient", "TCPClient\TCPClient.csproj", "{7FDF9A1A-D710-4921-95EF-741C1D3E705D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTest", "UnitTest\UnitTest.csproj", "{979AB166-A6F2-4AA7-8B7F-F99ECB49559F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{7FDF9A1A-D710-4921-95EF-741C1D3E705D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7FDF9A1A-D710-4921-95EF-741C1D3E705D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7FDF9A1A-D710-4921-95EF-741C1D3E705D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{979AB166-A6F2-4AA7-8B7F-F99ECB49559F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{979AB166-A6F2-4AA7-8B7F-F99ECB49559F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{979AB166-A6F2-4AA7-8B7F-F99ECB49559F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{979AB166-A6F2-4AA7-8B7F-F99ECB49559F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

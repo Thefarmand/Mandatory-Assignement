@@ -47,6 +47,20 @@ namespace TCPServer
                 //Tømmer bufferen efter hver "write operation"
                 sw.AutoFlush = true;
                 string[] incStrings;
+                //incStrings = sr.ReadLine().Split(' ');
+                //string ConvertionOption = incStrings[0].ToUpper();
+                //if (ConvertionOption == "TOGRAM")
+                //{
+                //    double weight = double.Parse(incStrings[1]);
+                //    double result = Converter.ToGram(weight);
+                //    sw.Write(result);
+                //}
+                //else
+                //{
+                //    double weight = double.Parse(incStrings[1]);
+                //    double result = Converter.ToOunce(weight);
+                //    sw.Write(result);
+                //}
 
                 //try
                 //{
@@ -66,7 +80,7 @@ namespace TCPServer
                     //Hvis der er mindre eller mere end to input giv fejl
                     if (incStrings.Length != 2)
                     {
-                        sw.Write($"No or too many values given\n");
+                        sw.Write($"Wrong number of inputs\n");
                     }
                     //Hvis ingen fejl find værdien af det indtastede
                     else if (double.TryParse(incStrings[1], out double inputValue))
@@ -79,7 +93,7 @@ namespace TCPServer
                     else
                     {
                         //Giv fejlmeddelelse ved forkert indtastet værdi
-                        sw.Write($"Incorrect value - {incStrings[1]}\n");
+                        sw.Write($"Must be TOGRAM or TOOUNCES and a number - {incStrings[1]}\n");
                     }
                 }
                 else
