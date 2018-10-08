@@ -47,59 +47,19 @@ namespace TCPServer
                 //Tømmer bufferen efter hver "write operation"
                 sw.AutoFlush = true;
                 string[] incStrings;
-                //incStrings = sr.ReadLine().Split(' ');
-                //string ConvertionOption = incStrings[0].ToUpper();
-                //if (ConvertionOption == "TOGRAM")
-                //{
-                //    double weight = double.Parse(incStrings[1]);
-                //    double result = Converter.ToGram(weight);
-                //    sw.Write(result);
-                //}
-                //else
-                //{
-                //    double weight = double.Parse(incStrings[1]);
-                //    double result = Converter.ToOunce(weight);
-                //    sw.Write(result);
-                //}
-
-                //try
-                //{
-                //    incStrings = sr.ReadLine().Split(' ');
-                //}
-                //catch (Exception e)
-                //{
-                //    Console.WriteLine("Lost connection to client.");
-                //    return;
-                //}
-                incStrings = sr.ReadLine().Split(" ");
-                //Alt det indtastede bliver til store bogstaver
-                var convertOption = incStrings[0].ToUpper();
-                //Tjek indtastet tekst
-                if (convertOption == "TOGRAM" || convertOption == "TOOUNCES")
+                incStrings = sr.ReadLine().Split(' ');
+                string ConvertionOption = incStrings[0].ToUpper();
+                if (ConvertionOption == "TOGRAM")
                 {
-                    //Hvis der er mindre eller mere end to input giv fejl
-                    if (incStrings.Length != 2)
-                    {
-                        sw.Write($"Wrong number of inputs\n");
-                    }
-                    //Hvis ingen fejl find værdien af det indtastede
-                    else if (double.TryParse(incStrings[1], out double inputValue))
-                    {
-                        sw.Write(convertOption == "TOGRAM"
-                            ? $"{Converter.ToGram(inputValue)}\n"
-                            : $"{Converter.ToOunce(inputValue)}\n");
-                    }
-
-                    else
-                    {
-                        //Giv fejlmeddelelse ved forkert indtastet værdi
-                        sw.Write($"Must be TOGRAM or TOOUNCES and a number - {incStrings[1]}\n");
-                    }
+                    double weight = double.Parse(incStrings[1]);
+                    double result = Converter.ToGram(weight);
+                    sw.Write(result);
                 }
                 else
                 {
-                    //Forkert indtastet option. fx Togrammy - giv fejlmeddelelse
-                    sw.Write($"Incorrect option - {incStrings[0]}\n");
+                    double weight = double.Parse(incStrings[1]);
+                    double result = Converter.ToOunce(weight);
+                    sw.Write(result);
                 }
             }
         }
