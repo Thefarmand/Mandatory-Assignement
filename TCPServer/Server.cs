@@ -53,13 +53,13 @@ namespace TCPServer
                 {
                     double weight = double.Parse(incStrings[1]);
                     double result = Converter.ToGram(weight);
-                    sw.Write(result);
+                    sw.WriteLine(result);
                 }
                 else
                 {
                     double weight = double.Parse(incStrings[1]);
                     double result = Converter.ToOunce(weight);
-                    sw.Write(result);
+                    sw.WriteLine(result);
                 }
             }
         }

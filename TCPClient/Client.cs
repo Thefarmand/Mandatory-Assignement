@@ -6,7 +6,7 @@ using System.Text;
 
 namespace TCPClient
 {
-    class Client
+    public class Client
     {
         private const int PORT = 7;
 
