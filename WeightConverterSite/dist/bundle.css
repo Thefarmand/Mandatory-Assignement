@@ -1,0 +1,42 @@
+body {
+  background-color: #EAE4E7; }
+
+h1 {
+  color: #581037;
+  font-family: "Roboto", sans-serif; }
+
+#numberInput {
+  font-family: "Roboto", sans-serif;
+  color: #0e040a;
+  border: none;
+  margin-left: 10px;
+  width: 253px;
+  font-size: 150%; }
+
+#weightText {
+  color: #581037;
+  font-family: "Roboto", sans-serif;
+  font-size: 120%;
+  margin-left: 95px; }
+
+#outputText, #outputTextWholeUnits {
+  color: #581037;
+  font-family: "Roboto", sans-serif;
+  font-size: 120%;
+  margin-top: 5px;
+  margin-left: 12px; }
+
+#outputTextWholeUnits {
+  font-size: 80%; }
+
+.button {
+  color: #18000E;
+  font-family: "Roboto", sans-serif;
+  font-size: 100%;
+  border: none;
+  display: inline-block;
+  background-color: #b596a7; }
+
+.buttonDiv {
+  margin-top: 5px;
+  margin-left: 10px; }
